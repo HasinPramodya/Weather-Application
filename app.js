@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function fetchHistoricalWeather(region, date) {
         
 
-        fetch(`http://api.weatherapi.com/v1/history.json?key=5a546b46d371405da9b165513242808&q=${region}&dt=${date}`)
+        fetch(`https://api.weatherapi.com/v1/history.json?key=5a546b46d371405da9b165513242808&q=${region}&dt=${date}`)
             .then((res) => res.json())
             .then((data) => {
                 updateHistoricalWeatherInfo(data);
